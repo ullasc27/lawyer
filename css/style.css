@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+   font-family: 'Open Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+h1{
+    color: #28377e;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #bab5b2;
+    font-size: 14px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    
+}
+.nav{
+    width: 60%;
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav ul li{
+    margin-left: 30px;
+}
+.nav ul li a{
+    font-size: 18px;
+    color: #28377e;
+    font-weight: 600px;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.content{
+    width: 460px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+.icon{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    animation: icon-ani 1s linear infinite;
+    animation-direction: alternate;
+
+}
+.icon i{
+    color: white;
+    font-size: 24px;
+}
+@keyframes icon-ani {
+    0%{
+        transform: translate(-50%,-0%);
+    }
+    100%{
+        transform: translate(-50%,-100%);
+    }
+}
+.container{}
+.who-we-are-content{
+    margin-top: 70px;
+    width: 50%;
+    float: left;
+    position: relative;
+    display: inline-block;
+    
+}
+.who-we-are-content::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: #f15a28;
+    
+}
+.who-we-are-content h1{
+    color: #28377e;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+.who-we-are-content p{
+    margin: 20px,0px;
+    padding-right: 100px;
+}
+.who-we-are-img{
+    width: 50%;
+    float: right;
+    margin-top: 60px;
+}
+.who-we-are-img img{
+    width: 50%;
+}
+/* span{
+    width: 80px;
+    height: 10px;
+    display: block;
+    background-color: #f15828 ;
+} */
